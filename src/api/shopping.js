@@ -71,7 +71,7 @@ module.exports = (app, channel) => {
   });
 
   app.get("/whoami", (req, res, next) => {
-    const processId = process.id
+    const processId = process.pid
     return res.status(200).json({ msg: "/shoping : I am Shopping Service",processId });
   });
 };
